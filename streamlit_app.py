@@ -125,6 +125,6 @@ for user in users:
         # st.write(f'Last parsed bp: {datetime.strptime(user["bp_info"]["last_parsed_bp"], "%Y-%m-%d %H:%M:%S")}')
         st.write(f'Last parsed me: {user["last_parsed"]}')
         st.write(f'Last parsed by bp: {user["bp_info"]["last_parsed_bp"]}')
-        st.write(f'Comment: {user.get("comment") or ''}')
+        st.write(f'Comment: {user.get("comment") or ""}')
 
         
