@@ -107,7 +107,7 @@ for user in users:
                         with cols[0]:
                             st.image(image_src, width=128)
 
-                    item_name = f'{sp_item.get("quality") or ""} {sp_item["market_hash_name"]} {"" if sp_item["tradable"] else "Non tradable!!"}'
+                    item_name = f'{sp_item.get("quality") or ""} {sp_item["market_hash_name"]} {"" if sp_item["tradable"] else "**Non tradable!!**"}'
                     with cols[2]:
                         st.write(item_name)
                     
